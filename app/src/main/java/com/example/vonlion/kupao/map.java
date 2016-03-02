@@ -584,6 +584,8 @@ public class map extends Activity  implements LocationSource, AMap.OnMapScreenSh
             builder.setNegativeButton("否", new DialogInterface.OnClickListener() {
                 @Override
                 public void onClick(DialogInterface dialog, int which) {
+                    Intent intent = new Intent(map.this,main_interface.class);
+                    startActivity(intent);
                     mListener = null;
                     if (locationClient != null) {
                         locationClient.onDestroy();
@@ -591,8 +593,6 @@ public class map extends Activity  implements LocationSource, AMap.OnMapScreenSh
                         locationOption = null;
                     }
                     locationClient = null;
-                    Intent intent = new Intent(map.this,main_interface.class);
-                    startActivity(intent);
                     map.this.finish();
                 }
             });
