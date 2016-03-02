@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.vonlion.kupao">
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:screenOrientation="portrait">
+
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="f992cf5026f664497f4d299263e9061a" />
+        <activity android:name="com.example.vonlion.kupao.MainActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.vonlion.kupao.main_interface"></activity>
+        <activity android:name="com.example.vonlion.kupao.RegisterActivity"></activity>
+        <activity android:name="com.example.vonlion.kupao.map"></activity>
+        <activity android:name="com.example.vonlion.kupao.Histroy"></activity>
+        <activity android:name="com.example.vonlion.kupao.Histroy_chart"></activity>
+        <activity android:name="com.example.vonlion.kupao.mydata"></activity>
+        <activity android:name="com.example.vonlion.kupao.Login"></activity>
+        <activity android:name="com.example.vonlion.kupao.Edit_data"></activity>
+        <activity android:name="com.example.vonlion.kupao.Edit_name"></activity>
+        <activity android:name="com.example.vonlion.kupao.Edit_photo"></activity>
+        <activity android:name="com.example.vonlion.kupao.Edit_height"></activity>
+        <activity android:name="com.example.vonlion.kupao.Edit_weight"></activity>
+        <activity android:name="com.example.vonlion.kupao.Edit_target"></activity>
+        <activity android:name="com.example.vonlion.kupao.Edit_location"></activity>
+        <activity android:name="com.example.vonlion.kupao.Edit_address"></activity>
+        <activity android:name="com.example.vonlion.kupao.Edit_mark"></activity>
+        <!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <service android:name="com.amap.api.location.APSService"/>
+    </application>
+
+</manifest>

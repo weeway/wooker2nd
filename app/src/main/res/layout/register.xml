@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:id="@+id/traceroute_rootview2"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:background="@drawable/login_bg2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#50b5e4"
+            android:id="@+id/linearLayout">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="注册"
+                android:textColor="#ffffff"
+                android:textSize="16dp"/>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/img_back"
+            android:id="@+id/register_back"
+            android:onClick="change_alpha" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="160dp"
+        android:layout_gravity="center"
+        android:src="@drawable/register_logo"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/linearLayout"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:background="@drawable/login_background"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:weightSum="1"
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/username"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:hint="账号"
+            android:textColorHint="#afb3b6"
+            android:singleLine="true"
+            android:background="@drawable/edit_frame_color"
+            android:textColor="#000000"/>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:hint="密码"
+            android:textColorHint="#afb3b6"
+            android:inputType="textPassword"
+            android:background="@drawable/edit_frame_color"
+            android:singleLine="true"
+            android:textColor="#000000"/>
+
+        <EditText
+            android:id="@+id/password1"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:hint="确认密码"
+            android:textColorHint="#afb3b6"
+            android:inputType="textPassword"
+            android:background="@drawable/edit_frame_color"
+            android:singleLine="true"
+            android:textColor="#000000"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:text="注册"
+            android:onClick="change_roll"
+            android:textColor="@drawable/button_text_color"
+            android:background="@drawable/button_change"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rm_bg5">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#50b5e4">
+            <Button
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:onClick="toggleMenu"
+                android:layout_margin="3dp"
+                android:background="@drawable/img_menu"
+                android:id="@+id/button2" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="主页"
+                    android:textColor="#ffffff"
+                    android:textSize="16dp"/>
+        </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--<com.amap.api.maps.MapView-->
+            <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+            <!--android:id="@+id/mapInRightMenu"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+        <!--</com.amap.api.maps.MapView>-->
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#66000000"
+            android:id="@+id/rm_r1"
+            android:layout_marginTop="0dp">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/head_portrait"
+                android:background="@drawable/right_menu_img"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:id="@+id/imageView2"
+                android:onClick="change_alpha0"/>
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/name"
+                android:layout_below="@+id/imageView2"
+                android:layout_centerHorizontal="true"
+                android:textSize="16dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/name"
+                android:textColor="#ffffff"/>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="15dp"
+                android:layout_below="@+id/name">
+
+                <TableRow
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="身高"
+                        android:textColor="#FFFFFF" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="体重"
+                        android:textColor="#FFFFFF"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="年龄"
+                        android:textColor="#FFFFFF"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="目标"
+                        android:textColor="#FFFFFF"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="4dp">
+                    <TextView
+                        android:id="@+id/tvHigh"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="@string/height"
+                        android:textColor="#FFFFFF"/>
+                    <TextView
+                        android:id="@+id/tvWeight"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="@string/weight"
+                        android:textColor="#FFFFFF"/>
+                    <TextView
+                        android:id="@+id/tvAge"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="20"
+                        android:textColor="#FFFFFF"/>
+                    <TextView
+                        android:id="@+id/tvTarget"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="@string/target"
+                        android:textColor="#FFFFFF"/>
+                </TableRow>
+            </TableLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/rm_r1">
+        <!--<Button-->
+            <!--android:layout_width="75dp"-->
+            <!--android:layout_height="75dp"-->
+            <!--android:text="今日排行"-->
+            <!--android:background="@drawable/interface_main_button_color"-->
+            <!--android:textSize="12dp"-->
+            <!--android:id="@+id/button3"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_toLeftOf="@+id/button"-->
+            <!--android:layout_toStartOf="@+id/button" />-->
+            <!--<Button-->
+                <!--android:layout_width="75dp"-->
+                <!--android:layout_height="75dp"-->
+                <!--android:text="历史记录"-->
+                <!--android:background="@drawable/interface_main_button_color"-->
+                <!--android:textSize="12dp"-->
+                <!--android:onClick="change_alpha3"-->
+                <!--android:layout_alignTop="@+id/button3"-->
+                <!--android:layout_toRightOf="@+id/button"-->
+                <!--android:layout_toEndOf="@+id/button" />-->
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:text="开始跑步"
+            android:id="@+id/button"
+            android:textSize="20dp"
+            android:onClick="change_alpha2"
+            android:background="@drawable/interface_main_button_color"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="40dp" />
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

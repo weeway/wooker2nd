@@ -1,0 +1,9 @@
+diff a/app/src/main/java/com/example/vonlion/sliding_menu/map.java b/app/src/main/java/com/example/vonlion/sliding_menu/map.java	(rejected hunks)
+@@ -564,6 +564,7 @@
+                     //String date = sDateFormat.format(new Date());
+                     String time = tvShowTime.getText().toString();
+                     String steps = tvSteps.getText().toString();
++                    String distance = Integer.toString(disFirstPart) + "." + Integer.toString(disSecondPart);
+                     String caloric = Integer.toString(calFirstPart) + "." + Integer.toString(calSecondPart);
+                     String state;
+                     if (averSpeed <= 9) {

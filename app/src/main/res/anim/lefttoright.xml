@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+    <translate
+        android:fromXDelta="-100%p"
+    android:toXDelta="0"
+    android:fromYDelta="0"
+    android:toYDelta="0"
+    android:duration="350"
+    />
+</set>
+    <!--//动画对象的起始X坐标-->
+    <!--//动画对象的结束X坐标-->
+    <!--//这里是横向移动，所以Y坐标无需改变，始终是0-->
+    <!--//动画时间5s-->

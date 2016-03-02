@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+       <!-- <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffffff"
+            android:onClick="change_alpha1"/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="#d4d4d4"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout2">
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/histroy_date1"
+            android:textColor="#5b5b5b"
+            android:layout_marginLeft="12dp"
+            android:textSize="12dp"
+            android:gravity="center"/>
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:layout_below="@+id/linearLayout2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:weightSum="1">
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="4dp"
+                android:src="@drawable/run"
+                android:layout_gravity="center"/>
+            <!--运动状态-->
+            <TextView
+                android:id="@+id/state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="慢跑"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:textStyle="italic"
+                android:textColor="#000000"
+                android:layout_gravity="center"
+                android:textSize="14dp"/>
+
+            <TextView
+                android:id="@+id/distance"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/histroy_distance"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:textSize="30dp"
+                android:textStyle="bold|italic"
+                android:layout_marginLeft="10dp"/>
+
+
+
+            <ImageView
+                android:id="@+id/img2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/time"
+                android:layout_gravity="center"
+                android:layout_marginLeft="25dp"/>
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/histroy_time"
+                android:layout_gravity="center"
+                android:layout_marginLeft="3dp"
+                android:textColor="#000000"
+                android:textStyle="italic"
+                android:textSize="12dp" />
+
+            <ImageView
+                android:id="@+id/img3"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/pace"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"/>
+            <TextView
+                android:id="@+id/step"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/histroy_pace"
+                android:layout_gravity="center"
+                android:layout_marginLeft="3dp"
+                android:textColor="#000000"
+                android:textStyle="italic"
+                android:textSize="12dp" />
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:visibility="gone"
+                android:clickable="false"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#50b5e4">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="历史记录"
+            android:textSize="16dp"
+            android:textColor="#FFFFFF"
+            android:gravity="center" />
+        <Button
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_margin="3dp"
+            android:background="@drawable/img_back"
+            android:onClick="change_alpha"/>
+    </RelativeLayout>
+
+    <ListView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/ListView01" />
+
+
+</LinearLayout>

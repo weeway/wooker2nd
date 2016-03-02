@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">蜗壳</string>
+    <string name="running_time">00:00:00</string>
+    <string name="running_pace">0</string>
+    <string name="running_distance">0</string>
+    <string name="running_energy">0</string>
+    <string name="running_speed">0</string>
+    <string name="name">Vonlion</string>
+    <!--<drawable name="sliding_menu_button1_normal">#ddba8557</drawable>-->
+    <!--<drawable name="sliding_menu_button1_pressed">#dd865b31</drawable>-->
+    <string name="head_portrait">@drawable/head_portrait</string>
+    <string name="height">180cm</string>
+    <string name="weight">70kg</string>
+    <string name="BMI">20.8</string>
+    <string name="target">10000 步</string>
+    <string name="mydata1">188天</string>
+    <string name="mydata2">31200步</string>
+    <string name="mydata3">地球0.6圈</string>
+    <string name="mydata4">366天</string>
+    <string name="histroy_distance">20</string>
+    <string name="histroy_time">00:46:23</string>
+    <string name="histroy_pace">12000</string>
+    <string name="histroy_speed">10</string>
+    <string name="histroy_energy">0</string>
+    <string name="histroy_date1">2月3日</string>
+    <string name="histroy_date2">14:24</string>
+    <string name="white">#ffffff</string>
+    <string name="location">浙江嘉兴</string>
+    <string name="adress">金都上品1-1-1</string>
+    <string name="mark">时间就是生命</string>
+</resources>
