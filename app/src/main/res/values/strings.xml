@@ -12,6 +12,7 @@
     <string name="height">180cm</string>
     <string name="weight">70kg</string>
     <string name="BMI">20.8</string>
+    <string name="age">18</string>
     <string name="target">10000 步</string>
     <string name="mydata1">188天</string>
     <string name="mydata2">31200步</string>
