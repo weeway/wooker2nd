@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:orientation="vertical" android:layout_width="match_parent"
+android:layout_height="match_parent"
+    android:background="#ffffff">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="#50b5e4">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="好友"
+        android:textSize="16dp"
+        android:textColor="#FFFFFF"
+        android:gravity="center" />
+    <Button
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_margin="3dp"
+        android:background="@drawable/img_back"
+        android:onClick="change_alpha"/>
+</RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#FFFFFF" >
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="我的好友"
+            android:textColor="#000000"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="附近的人"
+            android:textColor="#000000"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/text3"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="好友圈"
+            android:textColor="#000000"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/cursor"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="matrix"
+        android:src="@drawable/a" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vPager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1.0"
+        android:background="@drawable/friendbg2"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation" />
+
+</LinearLayout>

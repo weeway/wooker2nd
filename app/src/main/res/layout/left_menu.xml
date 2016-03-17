@@ -150,7 +150,8 @@
                 android:id="@+id/id_img4_back"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/lm_button4_change"/>
+                android:background="@drawable/lm_button4_change"
+                android:onClick="change4"/>
 
             <ImageView
                 android:id="@+id/id_img4"
