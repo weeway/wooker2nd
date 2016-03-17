@@ -289,7 +289,7 @@ public class map extends Activity  implements LocationSource, AMap.OnMapScreenSh
 
     public int choseColor(AMapLocation loc){
         int color = 0xFF4BEE12;
-        float interval = 0.35f;
+        float interval = 0.30f;
         int COLOR[] = { 0xff4bee12,0xff88ff16,0xffb4ff19,0xffdeff1d,0xffe9f71d,
                         0xffeeec1d,0xfff2de1d,0xfff6ce1d,0xfff9bd1d,0xfffbae1d,
                         0xfffb9e1d,0xfffc8d1d,0xfffd7e1d,0xfffc711d,0xfffe611d,
