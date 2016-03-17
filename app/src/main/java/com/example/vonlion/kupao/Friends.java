@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.graphics.BitmapFactory;
 import android.graphics.Matrix;
 import android.os.Bundle;
@@ -201,5 +202,10 @@ public class Friends extends Activity {
         @Override
         public void onPageScrollStateChanged(int arg0) {
         }
+    }
+    public void change_alpha(View v) {//左界面跳转到我的好友
+        Intent intent = new Intent(this,main_interface.class);
+        startActivity(intent);
+        overridePendingTransition(R.anim.out_alpha, R.anim.enter_alpha);
     }
 }
