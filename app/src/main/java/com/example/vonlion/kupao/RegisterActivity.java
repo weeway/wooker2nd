@@ -30,7 +30,6 @@ public class RegisterActivity extends Activity {
         setContentView(R.layout.register);
         username = (EditText)findViewById(R.id.username);
         password = (EditText)findViewById(R.id.password);
-        password1 = (EditText)findViewById(R.id.password1);
 
         findViewById(R.id.traceroute_rootview2).setOnClickListener(new View.OnClickListener() {
             //点击屏幕外取消输入框

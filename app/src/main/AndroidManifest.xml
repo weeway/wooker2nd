@@ -52,6 +52,7 @@
         <activity android:name="com.example.vonlion.kupao.Edit_location"></activity>
         <activity android:name="com.example.vonlion.kupao.Edit_address"></activity>
         <activity android:name="com.example.vonlion.kupao.Edit_mark"></activity>
+        <activity android:name="com.example.vonlion.kupao.Friends"></activity>
         <!-- ATTENTION: This was auto-generated to add Google Play services to your project for
      App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
         <meta-data

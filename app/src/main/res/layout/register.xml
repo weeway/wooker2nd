@@ -50,7 +50,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="240dp"
+        android:layout_height="270dp"
         android:background="@drawable/login_background"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
@@ -64,7 +64,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingLeft="15dp"
-            android:hint="账号"
+            android:hint="账号  (4位以上)"
             android:textColorHint="#afb3b6"
             android:singleLine="true"
             android:background="@drawable/edit_frame_color"
@@ -78,7 +78,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingLeft="15dp"
-            android:hint="密码"
+            android:hint="密码 (6位以上)"
             android:textColorHint="#afb3b6"
             android:inputType="textPassword"
             android:background="@drawable/edit_frame_color"
@@ -86,16 +86,27 @@
             android:textColor="#000000"/>
 
         <EditText
-            android:id="@+id/password1"
             android:layout_marginLeft="30dp"
             android:layout_marginRight="30dp"
             android:layout_marginTop="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingLeft="15dp"
-            android:hint="确认密码"
+            android:hint="昵称  (3位以上)"
             android:textColorHint="#afb3b6"
-            android:inputType="textPassword"
+            android:background="@drawable/edit_frame_color"
+            android:singleLine="true"
+            android:textColor="#000000"/>
+
+        <EditText
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:hint="邮箱  (支持主流邮箱)"
+            android:textColorHint="#afb3b6"
             android:background="@drawable/edit_frame_color"
             android:singleLine="true"
             android:textColor="#000000"/>

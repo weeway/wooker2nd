@@ -112,6 +112,12 @@ public class main_interface extends Activity{
         overridePendingTransition(R.anim.out_alpha, R.anim.enter_alpha);
     }
 
+    public void change4(View v) {//左界面跳转到我的好友
+        Intent intent = new Intent(this,Friends.class);
+        startActivity(intent);
+        overridePendingTransition(R.anim.out_alpha, R.anim.enter_alpha);
+    }
+
     public void change6(View v) {//左界面跳转到修改资料界面
         Intent intent = new Intent(this, Edit_data.class);
         startActivity(intent);
